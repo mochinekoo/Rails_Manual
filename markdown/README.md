@@ -20,3 +20,24 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 end
 ```
+
+# コンソール
+```rails console```
+
+Gemファイルに追加しないと、動かない場合がある
+```gem "fiddle"```
+
+# erb
+```
+<% rubyのコード %>
+<% end %>
+```
+
+# コントローラ
+```
+class HomeController < ApplicationController
+  def index
+    @note_test = NoteTest.all
+  end
+end
+```
